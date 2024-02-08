@@ -1144,10 +1144,10 @@ strong {
   TEXT              
 -----------------------------------------*/
 .text-area {
-  margin: 15 150px; /* 设置左右两边的空白 */
+  margin: 20 200px; /* 设置左右两边的空白 */
   text-align: left; /* 设置文本左对齐 */
   /* border: 1px solid black; 设置边框 */
-  padding: 20px; /* 设置内边距 */
+  padding: 35px; /* 设置内边距 */
   font-size: 18px; /* 设置字体大小为 16 像素 */
 	line-height: 1.25; /* 设置行间距为字体大小的 1.5 倍 */
   color: black; /* 设置字体颜色为蓝色 */
