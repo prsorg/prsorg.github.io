@@ -312,7 +312,8 @@ strong {
   border: 1px solid #cbcbcb7d;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
-  font-size: var(--btn-font-size);
+  /* font-size: var(--btn-font-size); */
+  font-size: 12px;
   font-weight: var(--font-weight-bold);
   line-height: normal;
   transition: all 0.3s;
@@ -1277,7 +1278,7 @@ strong {
     button
 ----------------*/
 .button-code {
-  margin-left: 15px; color: aliceblue;
+  margin-left: 20px; color: aliceblue;
 }
 
 .button-code:hover {
