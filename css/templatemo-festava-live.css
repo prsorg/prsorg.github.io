@@ -1,25 +1,30 @@
-/*
+/*0px
 
 TemplateMo 583 Festava Live
 
 https://templatemo.com/tm-583-festava-live
 
 */
-
+ 
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #ffffff;
-  --primary-color-back:                #F8CB2E;
-  --secondary-color:              #EE5007;
+  --white-color:                  #fffffffb;
+  --primary-color:                rgba(246, 249, 252, 0.949);
+  /* top area */
+  --primary-color-back:                #ffc800;
+  --secondary-color:              #e35944;
+   /* nav button */
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
+  --custom-btn-bg-color:          #ee5007e4;
+   /* right button */
+  --custom-btn-bg-hover-color:    #b71540d3;
+  /* right button clicked */
+  --dark-color:                   #0000006e;
+  --down-color:                   #000000;
+  --p-color:                      #4d4e50;
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
@@ -41,7 +46,7 @@ https://templatemo.com/tm-583-festava-live
 
   --font-weight-light:            300;
   --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-bold:             600;
 }
 
 body {
@@ -57,7 +62,10 @@ body {
 h2,
 h3,
 h4,
-h5,
+h5 {
+  color: var(--down-color);
+}
+
 h6 {
   color: var(--dark-color);
 }
@@ -88,10 +96,12 @@ h4 {
 }
 
 h5 {
+  color: var(--p-color);
   font-size: var(--h5-font-size);
 }
 
 h6 {
+  color: var(--down-color);
   font-size: var(--h6-font-size);
 }
 
@@ -104,7 +114,7 @@ p {
 ul li {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-light);  
 }
 
 a, 
@@ -221,7 +231,7 @@ strong {
 .section-bg {
   background-color: var(--section-bg-color);
 }
- 
+  
 .section-overlay {
   background-color: var(--dark-color);
   position: absolute;
@@ -269,7 +279,7 @@ strong {
 .nav-tabs .nav-link:hover  */
 {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--primary-color);
 }
 
@@ -298,14 +308,15 @@ strong {
 -----------------------------------------*/
 .custom-btn {
   background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
+  /* border: 2px solid transparent; */
+  border: 1px solid #cbcbcb7d;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
   transition: all 0.3s;
-  padding: 10px 20px;
+  padding: 10px 17px;
 }
 
 .custom-btn:hover {
@@ -332,6 +343,34 @@ strong {
 }
 
 
+.news-btn {
+  /* background: var(--primary-color-back); */
+  background:  #D9D9D9;
+  /* border: 2px solid transparent; */
+  border: 2px solid #8080802b  ;
+  border-radius: 50%;
+  color: #ee5007e4  ;
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  transition: all 0.3s;
+  padding: 25px 27px;
+  margin-bottom: 30px;
+  /* margin-left: 20px; */
+  margin-right: 10px;
+}
+
+.news-btn:hover {
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+}
+
+.news-border-btn {
+  background: transparent;
+  border: 2px solid var(--custom-btn-bg-color);
+  color: var(--custom-btn-bg-color);
+}
+
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
@@ -346,6 +385,43 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  opacity: 0.96; 
+  /* 设置透明度为50% */
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.video-solo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  flex: 1;
+  margin: 0 10px;
+  /* margin-left: 10%; */
+}
+
+.video1 {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  /* padding-left: 30%; */
+}
+.video2 {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 0%;
 }
 
 
@@ -353,9 +429,12 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-color: var(--primary-color);
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* background-color: var(--primary-color); */
+  /* background: linear-gradient(to right, #ff000055, #ffff0059); */
+  /* background: linear-gradient(to right, #ff000055, #ffff0059); */
+  background: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 
@@ -376,20 +455,20 @@ strong {
 
 .navbar {
   background: transparent;
-  z-index: 9;
+  z-index: 999;
 }
-
+/* nav button here there is naviagrion tab */
 .navbar-brand,
 .navbar-brand:hover {
   color: var(--white-color);
-  font-size: var(--h5-font-size);
+  font-size: 23px;
   font-weight: var(--font-weight-bold);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 8px;
+  padding: 8px 16px;
 }
 
 .navbar-nav .nav-link {
@@ -474,14 +553,24 @@ strong {
 }
 
 
+
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
 .hero-section {
   position: relative;
   overflow: hidden;
+  padding-top: 8%;
+  height: 69vh;
+  /* height: calc(100vh - 51px); */
+}
+
+.top-section {
+  position: relative;
+  overflow: hidden;
   padding-top: 100px;
-  height: calc(100vh - 51px);
+  height: 15vh;
+  /* height: calc(100vh - 51px); */
 }
 
 .hero-section small {
@@ -498,7 +587,7 @@ strong {
   position: relative;
   z-index: 2;
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .hero-section .container .row {
@@ -832,7 +921,7 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--dark-color);
+  background-color: var(--down-color);
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
@@ -973,7 +1062,7 @@ strong {
   }
 
   .hero-section {
-    padding-top: 150px;
+    padding-top: 0px;
   }
 
   .pricing-thumb {
@@ -1143,6 +1232,17 @@ strong {
 /*---------------------------------------
   TEXT              
 -----------------------------------------*/
+.main-text{
+  /* width: 80%; */
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: justify; /* 设置文本两端对齐 */
+  text-justify: inter-word; /* 控制文本在单词之间对齐 */
+  /* overflow-wrap: normal; */
+  /* white-space: nowrap; 文本不换行 */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
 .text-area {
   margin: 20 200px; /* 设置左右两边的空白 */
   text-align: left; /* 设置文本左对齐 */
@@ -1155,4 +1255,155 @@ strong {
 .button-container {
   display: flex;
   justify-content: space-between; /* 在容器内均匀分布按钮 */
+}
+.text-dark{
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.54);
+}
+.text-small-gray{
+  font-size:large;
+  color: rgba(0, 0, 0, 0.54);
+}
+.text-gray{
+  font-size:x-large;
+  color: rgba(0, 0, 0, 0.559);
+}
+.text-content {
+  color: black;  /* 设置文字颜色为黑色 */
+  text-align: left;  /* 文字从左往右对齐 */
+  margin-left: 3.5%;  /* 左侧距离屏幕边缘 20px 的距离 */
+}
+/* --------------
+    button
+----------------*/
+.button-code {
+  margin-left: 15px; color: aliceblue;
+}
+
+.button-code:hover {
+  /* background-color: black; */
+  color: black; /* 鼠标悬停时文字颜色变为白色 */
+}
+
+/* --------------
+    URL
+----------------*/
+.url-text {
+  display: inline-block;
+  color: var(--p-color);
+  font-weight:400;
+  text-decoration: underline;
+  /* text-align:center */
+  text-decoration-color: rgba(0, 0, 0, 0.716);
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 1px;
+  /* text-decoration-offset: 0.2em; */
+}
+.url-show {
+  /* margin-left: 30px;  */
+  color: rgb(24, 25, 25);
+  font-weight: 500; 
+}
+
+.url-show:hover {
+  /* background-color: black; */
+  color: var(--secondary-color);
+}
+.url-nor {
+  /* margin-left: 30px;  */
+  color: rgb(24, 25, 25);
+  font-weight: 300; 
+}
+
+.url-nor:hover {
+  /* background-color: black; */
+  color: var(--primary-color-back);
+}
+
+/*---------------------------------------
+  Images              
+-----------------------------------------*/
+.center-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+  height: auto;
+}
+.show-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  max-width: 75%;
+  height: auto;
+}
+
+.results-carousel .item {
+  margin: 0px;
+  /* overflow: hidden; */
+  padding: 0px;
+  font-size: 0;
+}
+
+.text-container {
+  height: 10vh; /* 占据屏幕一半的高度 */
+  width: 100%; /* 宽度与屏幕一致 */
+  /* background-color: #f2f2f2; 背景颜色 */
+  background-color: gray;
+}
+
+.picture-item {
+  /* margin: 5px; */
+  overflow: hidden;
+  /* padding: 20px; */
+  width: 100vw; /* 设置宽度为屏幕宽度 */
+  height:60vh; /* 设置高度为屏幕高度的一半 */
+  overflow: hidden; /* 超出部分隐藏 */
+  font-size: 0;
+}
+.background-image {
+  background-image: url('static/images/carousel1.jpg'); /* 设置背景图片 */
+  background-size: cover; /* 背景图片铺满整个容器 */
+  padding: 1px; /* 添加一些内边距，使文字内容与背景图片有一定间距 */
+  color: white; /* 设置文字颜色为白色 */
+}
+
+/*---------------------------------------
+  Author CV              
+-----------------------------------------*/
+
+.person-container{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.person {
+  text-align: center;
+  margin-right: 3%;
+  /* float: left; */
+  width: 20%; /* 每个介绍占据页面宽度的 25% */
+}
+.person img {
+  border-radius: 50%; /* 将照片剪辑为圆形 */
+  width: 135px; /* 设置照片的宽度 */
+  height: 135px; /* 设置照片的高度 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  object-fit: cover; /* 保持照片比例并填充整个区域 */
+  border: 2px solid #4e4d4d; /* 设置白色边框 */
+
+}
+.person p {
+  margin-top: 10px; /* 段落顶部的边距 */
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
