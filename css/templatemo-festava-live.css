@@ -1363,7 +1363,7 @@ strong {
   overflow: hidden;
   /* padding: 20px; */
   width: 100vw; /* 设置宽度为屏幕宽度 */
-  height:60vh; /* 设置高度为屏幕高度的一半 */
+  height:66vh; /* 设置高度为屏幕高度的一半 */
   overflow: hidden; /* 超出部分隐藏 */
   font-size: 0;
 }
