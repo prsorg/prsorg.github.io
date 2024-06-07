@@ -199,11 +199,24 @@ https://templatemo.com/tm-583-festava-live
                             margin-bottom: 20px;
                             max-width: 40%;
                             height: auto;">
-                        <p><h6>1. Human-centered In-building Embodied Delivery:</h6> Based on instructions and descriptions, locate the designated item and deliver it to a designated individual. The model or system should understand context, infer possible locations, and accommodate regular human behavior.
-                            Robots attempt to comprehend language instructions, locate target objects based on visual perception and environmental knowledge, and accurately grasp and deliver the items to the intended human characters.
-                            The delivery task incorporates multimodal information fusion, contextual alignment, long-range reasoning, and serves as a crucial scenario in robotic services.
-                            <br><strong>Task-specific:</strong> including task directive, character photos, introductions, and approximate schedules of characters. Success conditions involve retrieving items and identifying the target person within close proximity. 
-                            <br> <strong>Evaluation:</strong> based on the total time taken and success rate of the object delivery, grasping the target object, and identifying the target character.
+                        <p><h6>1. Human-centered In-building Embodied Delivery:</h6> 
+                            We have developed a brand-new virtual environment system from scratch, constructing a multi-level connected building space modeled after a polar research station. This environment also includes autonomous human characters and robots with grasping and mobility capabilities, as well as a large number of interactive items. Based on this environment, we have built a delivery dataset containing 13k language instructions to guide robots in providing services. We simulate human behavior through human characters and sample their various needs in daily life. Finally, we proposed a method centered around a large multimodal model to serve as the baseline system for this dataset. Compared to past embodied data work, our work focuses on a virtual environment centered around human-robot interaction for commercial scenarios. We believe that this will bring new perspectives and exploration angles to the embodied community.
+                            <!-- Based on instructions and descriptions, locate the designated item and deliver it to a designated individual. The model or system should understand context, infer possible locations, and accommodate regular human behavior. -->
+                            <!-- Robots attempt to comprehend language instructions, locate target objects based on visual perception and environmental knowledge, and accurately grasp and deliver the items to the intended human characters. -->
+                            <!-- The delivery task incorporates multimodal information fusion, contextual alignment, long-range reasoning, and serves as a crucial scenario in robotic services. -->
+                            <br><strong>Purpose:&nbsp;</strong> Deliver the requested item to the vicinity of the designated character.
+                            <br><strong>Delivery Items:&nbsp;</strong> Items in the environment that can be grabbed and moved.
+                            <br><strong>Customers:&nbsp;</strong> Ten virtual human characters with different daily activities inside the building. They will move within the building for their own purposes.
+                            <br><strong>Spatial Scope:&nbsp;</strong> The reachable areas within different rooms of a three-story building.
+                            <br><strong>Time Setting:&nbsp;</strong> Real-world time, but simulation can be accelerated
+                            <br><strong>Scenario Map:&nbsp;</strong> 2D projected obstacle map of scenario, and pre-sampled panoramic photos at various locations on the map.
+                            <br><strong>Robot Positioning:&nbsp;</strong>  We adopt relative localization rules for robot positioning.
+                            <br><strong>Robot Actions:&nbsp;</strong> Movement, Joint control, and manipulation.
+                            <br><strong>Robot Skills:&nbsp;</strong>  Local navigation by coordinate, 6-DOF visual grasping, and pose adjustment.
+                            <br><strong>Sensors:&nbsp;</strong>  Two RGB-D cameras (head and arm), tactile sensors.
+                            <br><strong>Success Criteria:&nbsp;</strong>  Place the target object within a 3 meter range of the target person.
+                            <br><strong>Constraints:&nbsp;</strong>  Completion within 8 minutes without any dangerous collisions and unavailability of environmental metadata.
+                            <br> <strong>Evaluation:&nbsp;</strong> based on the total time taken and success rate of the object delivery, grasping the target object, and identifying the target character.
                             <!-- <br> -->
                             <img src="images/task/task13.png" class="center-img" alt="Centered Image">
                             <img src="images/task/task11.png" class="center-img" alt="Centered Image">
