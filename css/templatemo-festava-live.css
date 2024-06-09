@@ -1325,6 +1325,19 @@ strong {
 /*---------------------------------------
   Images              
 -----------------------------------------*/
+.center-img-border{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+  height: auto;
+
+  border: 2px solid black; /* 边框宽度和样式 */
+  border-radius: 5px; /* 可选：边框圆角 */
+  padding: 5px; /* 可选：增加内边距 */
+}
 .center-img{
   display: block;
   margin-left: auto;
@@ -1333,6 +1346,20 @@ strong {
   margin-bottom: 20px;
   max-width: 60%;
   height: auto;
+
+}
+.show-img-border{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  max-width: 75%;
+  height: auto;
+
+  border: 2px solid black; /* 边框宽度和样式 */
+  border-radius: 5px; /* 可选：边框圆角 */
+  padding: 5px; /* 可选：增加内边距 */
 }
 .show-img{
   display: block;
