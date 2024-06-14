@@ -278,7 +278,8 @@ strong {
 .nav-tabs .nav-link:focus, 
 .nav-tabs .nav-link:hover  */
 {
-  background: var(--white-color);
+  /* background: var(--white-color); */
+  background: #d4d4d4;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--primary-color);
 }
@@ -380,6 +381,9 @@ strong {
 }
 
 .custom-video {
+  background-color: #d7d7d7;
+  /* border: 1px solid #212121; */
+  /* border-radius: 3px; */
   position: absolute;
   top: 0;
   left: 0;
