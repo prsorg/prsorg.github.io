@@ -54,6 +54,20 @@ body {
   font-family: var(--body-font-family); 
 }
 
+  
+ /* 当屏幕宽度小于600px时，应用不同的字体大小 */
+ @media screen and (max-width: 600px) {
+  body {
+    font-size: 12px; /* 手机端的字体大小 */
+  }
+ }
+  
+ /* 如果您还想为更小的屏幕设置不同的字体大小 */
+ @media screen and (max-width: 480px) {
+  body {
+    font-size: 10px; /* 非常小屏幕（如旧款手机）的字体大小 */
+  }
+ }
 
 /*---------------------------------------
   TYPOGRAPHY               
