@@ -1299,6 +1299,10 @@ strong {
 .button-code {
   margin-left: 20px; color: aliceblue;
 }
+.button-black {
+  margin-left: 20px; color: rgb(73, 73, 73);
+}
+
 
 .button-code:hover {
   /* background-color: black; */
