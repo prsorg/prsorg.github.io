@@ -325,7 +325,7 @@ strong {
   background-color: #292929; /* 黑色背景 */
   color: #ffffff; /* 白色文字 */
   border: none; /* 移除边框 */
-  padding: 10px 20px; /* 内边距 */
+  padding: 8px 15px; /* 内边距 */
   text-align: center; /* 文字居中 */
   text-decoration: none; /* 移除下划线 */
   display: inline-block; /* 使能够设置宽度和高度 */
@@ -333,8 +333,8 @@ strong {
   font-size: 16px; /* 字体大小 */
   cursor: pointer; /* 鼠标悬停时显示指针样式 */
   outline: none; /* 移除轮廓 */
-  margin-left: 5px;
-  margin-right: 20px;
+  margin-left: 3px;
+  margin-right: 7px;
  }
 
 .link-block:hover{
