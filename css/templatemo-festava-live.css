@@ -1282,6 +1282,7 @@ strong {
   word-wrap: break-word;
   overflow-wrap: break-word;
   min-height: auto;
+  overflow: hidden;
   /* overflow-wrap: normal; */
   /* white-space: nowrap; 文本不换行 */
   /* justify-content: center; */
