@@ -1279,10 +1279,6 @@ strong {
   padding-right: 3%;
   text-align: justify; /* 设置文本两端对齐 */
   text-justify: inter-word; /* 控制文本在单词之间对齐 */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  min-height: auto;
-  overflow: hidden;
   /* overflow-wrap: normal; */
   /* white-space: nowrap; 文本不换行 */
   /* justify-content: center; */
