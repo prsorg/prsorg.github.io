@@ -601,7 +601,8 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 8%;
-  height: 72vh;
+  height: auto;
+  /* height: 72vh; */
   /* height: calc(100vh - 51px); */
 }
 
