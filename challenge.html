@@ -176,10 +176,13 @@ https://templatemo.com/tm-583-festava-live
                     <div class="container" style="margin-top: 36px;">
                         <div class="row">
             
-                            <div class="col-lg-10 col-12 mx-auto">
+                            <div class="col-lg-10 col-12 mx-auto" style="padding-left: 9px;
+                            border-left: 2px solid #000; padding-top: 5px; 
+                            border-radius: 1px; 
+                            display: inline-block;" > 
                                 <h4 class="mb-4">PRS Challenge News: <br></h4>
                                 <h5 class="mb-4">
-                                    <a href="#section_task" class="url-text"> Human-centered In-building Embodied Delivery Benchmark </a>
+                                    <a href="#section_task" class="url-text">&#8226; Human-centered In-building Embodied Delivery Benchmark </a>
                                     <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScrk25iSnnmOH8cj4eqD8lcALcj1Cx1bSiiTsw9q9DzvWnCig/viewform?usp=sf_link" class="url-text"> Human-centered In-building Embodied Delivery Benchmark </a> -->
                                     &nbsp;&nbsp;
                                     <span class="link-block">
@@ -201,13 +204,18 @@ https://templatemo.com/tm-583-festava-live
     
                         
 
-                            <h4 class="mb-4">
+                            <h5 class="mb-4">
                                 <br>
-                                <a href="award.html" class="url-text">CVPR 2024 Embodied AI Workshop PRS Challenge Award Winners </a>
-                            </h4>
-                            <br>
+                                <a href="award.html" class="url-text">&bull; CVPR 2024 Embodied AI Workshop PRS Challenge Award Winners </a>
+                            </h5>
+                            <!-- <br> -->
                             <!-- <h4 >PRS Challenge</h4> -->
 
+                            <h5 class="mb-4">
+                                <br>
+                                <h5>&bull; We move the online evaluation to the <a href="https://eval.ai/web/challenges/challenge-page/2313/overview" class="url-text"> Eval AI </a>.</h5>
+                            <br>
+                            </h5>
                         </div>
                         </div>
                     </div>
@@ -235,37 +243,68 @@ https://templatemo.com/tm-583-festava-live
                             <!-- Robots attempt to comprehend language instructions, locate target objects based on visual perception and environmental knowledge, and accurately grasp and deliver the items to the intended human characters. -->
                             <!-- The delivery task incorporates multimodal information fusion, contextual alignment, long-range reasoning, and serves as a crucial scenario in robotic services. -->
                             <br>
-                            <br><strong>Purpose:&nbsp;</strong> Deliver the requested item to the vicinity of the designated character.
-                            <br><strong>Delivery Items:&nbsp;</strong> Items in the environment that can be grabbed and moved.
-                            <br><strong>Customers:&nbsp;</strong> Ten virtual human characters with different daily activities inside the building. They will move within the building for their own purposes.
-                            <br><strong>Spatial Scope:&nbsp;</strong> The reachable areas within different rooms of a three-story building.
-                            <br><strong>Time Setting:&nbsp;</strong> Real-world time, but simulation can be accelerated
-                            <br><strong>Scenario Map:&nbsp;</strong> 2D projected obstacle map of scenario, and pre-sampled panoramic photos at various locations on the map.
-                            <br><strong>Robot Positioning:&nbsp;</strong>  We adopt relative localization rules for robot positioning.
-                            <br><strong>Robot Actions:&nbsp;</strong> Movement, Joint control, and manipulation.
-                            <br><strong>Robot Skills:&nbsp;</strong>  Local navigation by coordinate, 6-DOF visual grasping, and pose adjustment.
-                            <br><strong>Sensors:&nbsp;</strong>  Two RGB-D cameras (head and arm), tactile sensors.
-                            <br><strong>Success Criteria:&nbsp;</strong>  Place the target object within a 3 meter range of the target person.
-                            <br><strong>Constraints:&nbsp;</strong>  Completion within 8 minutes without any dangerous collisions and unavailability of environmental metadata.
-                            <br> <strong>Evaluation:&nbsp;</strong> based on the total time taken and success rate of the object delivery, grasping the target object, and identifying the target character.
-                            <br><br>
-                            <h5>We move the online evaluation to the <a href="https://eval.ai/web/challenges/challenge-page/2313/overview" class="url-text"> Eval AI </a>.</h5>
-                            <br>
+                            <ul style="padding-left: 0%;">
+                                <li><strong>Purpose:</strong> Deliver the requested item to the vicinity of the designated character.</li>
+                                <li><strong>Delivery Items:</strong> Items in the environment that can be grabbed and moved.</li>
+                                <li><strong>Customers:</strong> Ten virtual human characters with different daily activities inside the building. They will move within the building for their own purposes.</li>
+                                <li><strong>Spatial Scope:</strong> The reachable areas within different rooms of a three-story building.</li>
+                                <li><strong>Time Setting:</strong> Real-world time, but simulation can be accelerated.</li>
+                                <li><strong>Scenario Map:</strong> 2D projected obstacle map of scenario, and pre-sampled panoramic photos at various locations on the map.</li>
+                                <li><strong>Robot Positioning:</strong> We adopt relative localization rules for robot positioning.</li>
+                                <li><strong>Robot Actions:</strong> Movement, Joint control, and manipulation.</li>
+                                <li><strong>Robot Skills:</strong> Local navigation by coordinate, 6-DOF visual grasping, and pose adjustment.</li>
+                                <li><strong>Sensors:</strong> Two RGB-D cameras (head and arm), tactile sensors.</li>
+                                <li><strong>Success Criteria:</strong> Place the target object within a 3 meter range of the target person.</li>
+                                <li><strong>Constraints:</strong> Completion within 8 minutes without any dangerous collisions and unavailability of environmental metadata.</li>
+                                <li><strong>Evaluation:</strong> Based on the total time taken and success rate of the object delivery, grasping the target object, and identifying the target character.</li>
+                        
+                            </ul>
+                              <br>
+                            <!-- <h5>We move the online evaluation to the <a href="https://eval.ai/web/challenges/challenge-page/2313/overview" class="url-text"> Eval AI </a>.</h5>
+                            <br> -->
+                            <!-- <h6 style="margin-left: 0%;">Task Definition</h6> -->
+                            <h7>Human-centered in-building embodied delivery describes a task that originates from a real commercial delivery scenario. It mainly refers to the precise delivery service for users in private spaces where external delivery services cannot be used, 
+                                achieved through embodied robots. This task typically requires the robot to locate the target item based on the user's needs (e.g. grasp a water bottle from the kitchen and bring it to me.) across multiple rooms within the three-story building (a polar research station building, see the thumbnail in the top right corner) and ultimately deliver it to the designated location/person. The robot needs to consider the user's context (behavior or schedule), as the user will be moving around the building according to their own goals during the delivery.</h7>
                             
                             <img src="images/gif/robot.gif" class="show-img" alt="Centered Image">
                             <img src="images/gif/delivery.gif" class="show-img" alt="Centered Image">
-                            
+                            <br>
+                            <h6 style="margin-left: 0%;">Dataset</h6>
+                            <h7>In constructing delivery service data, we initially utilize the large language model (LLM) to generate reasonable daily activities and varied demands for virtual characters based on their profiles. Consequently, the robot is required to locate and deliver the appropriate objects to meet the human characters' demands and accomplish task objectives. 
+                                We continually generate diverse data by modifying character needs, daily routines, and target objects. Furthermore, we incorporate a manual review and refinement stage to ensure the balance of the task data.</h7>
+                                <!-- <br><p> The commercial scenario is characterized by the need to account for numerous complex and intervening factors. We analyze the scenario and pinpoint the critical elements of the delivery service. 
+                                Followed by formulating task objectives and definitions, which includes establishing the task's premises, context, framework, and scope</p> -->
+                            <!-- <br> -->
                             <img src="images/task/task14.png" class="show-img" alt="Centered Image">
                             <br>
+                            <h7>The dataset is represented as a JSON file, and task initialization, execution, and evaluation are accomplished using the Python API. The task involves a variety of objects with different styles.
+                            NPCs in the environment engage in continuous simulated life activities, generating various needs over time, such as eating, drinking, working, and resting. At these moments, NPCs potentially require certain items to fulfill their demands (e.g., food, drinks, mobile phones). Thus, we simulate robot delivery services by collecting these needs.
+                            By querying environmental data, we automatically gather a large number of delivery tasks. We refine the language content using the LLM and conduct manual checks and corrections. Specifically, we introduce LMM to perform textual annotation (visual feature description) of image data to decrease manual work and increase diversity.
+                            The figure above indicates ten distinct NPCs as the service targets, each with their own profile and preferences. The figure above illustrates the spatial distribution of scenes within the task set, demonstrating long-range visibility across spaces.</h7>
                             <img src="images/task/task13.png" class="center-img-border" alt="Centered Image">
                             <p style=" text-align: center; width: 60%; margin-left: 20%;">A data generation instance. We generate human activities, target objects, robot positions,
                                  task instructions, and a complete process of robot execution based on the settings combined with large models.</p>
                             <img src="images/task/task11.png" class="center-img-border" alt="Centered Image">
                             <p style=" text-align: center;">The available information in task.</p>
+
+                            <h6 style="margin-left: 2%;">Task Definition and Settings</h6>
+                            <ul>
+                                <li>Robots operate within a relatively fixed building space.</li>
+                                <li>The residents within the building are the recipients of the service, and they typically move throughout the building based on personal needs and objectives. Robots can access relevant information about the recipients to better locate and identify them.</li>
+                                <li>The transportation service may cover a substantial area, involving different floors and rooms.</li>
+                                <li>Robots typically need to understand human instructions in order to search for and retrieve the correct target items, and deliver them to the designated recipients.</li>
+                            </ul>
+                            <p style="margin-left: 5%; ">Based on the aforementioned scenario requirements, we provide the following task definition and settings, as shown in the following table:</p>
                             <img src="images/task/task12.png" class="center-img" alt="Centered Image">
                             <p style=" text-align: center;">Human-centered in-building embodied delivery task setting.</p>
+                            
+                            <h6 >Baseline</h6>
+                            <h7>We propose an LMM-based approach as the baseline method, employing a modular architecture encompassing language instruction analysis, multimodal target search, and robotic action execution. The baseline method comprises multiple modules, including the language, vision, and action modules, as shown in the following figure, for tasks such as language parsing, navigation search, scene understanding, object recognition, segmentation, action, localization, and object manipulation.</h7>
                             <img src="images/task/delivery_method.png" class="center-img-border" alt="Centered Image">
                             <p style=" text-align: center;"> Modular method for the robot delivery task with LLM and LMM.</p>
+                            <h6 >Simulation Environment</h6>
+                            <h7>Grounded in the task setting and business requirements, we have constructed from scratch a novel simulation environment modelled after a real-world polar research station (referred to as the Polar Research Station Environment, PRS). This environment comprises a three-story building interconnected by stairs and a functional elevator. It integrates common human societal scenarios into a community-like pattern, such as bedrooms, gyms, offices, laboratories, medical rooms, wards, living rooms, leisure spaces, etc. This design aims to cover as a wide range of everyday scenarios within the building as possible. Additionally, to simulate daily activities for delivery services, the environment includes over a dozen virtual human characters engaging in activities according to their individual intentions. Furthermore,
+                                 we provide a range of interactive objects to support the tasks. Lastly, we have designed a robotic simulation with grasping and moving capabilities to serve human character agents.</h7>
                             <img src="images/task/task15.png" class="show-img" alt="Centered Image">
                             <p style=" text-align: center;"> Scenarios and objects in PRS environment.</p>
                         <!-- <br><h6>2. Device Operation Instruction Following:</h6> Operate device components as per manual and guidance, interacting with the device to fulfill its functions. This task tests multimodal models' ability to align language with vision, mapping semantic concepts onto physical functions. 
