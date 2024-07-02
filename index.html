@@ -368,32 +368,33 @@ https://templatemo.com/tm-583-festava-live
                             </span> <br>
                             <span style="font-weight: 500; font-size: 17px; line-height: 1.7; margin-top: 5px;">The Polar Research Station (<a href="https://github.com/PRS-Organization" class="url-text">PRS</a>) Platform is simulator project provided by PRGS Organization.
                             We aim to address the critical challenge of gradually integrating generalist embodied agents into human society. 
-                            To further explore the scenarios of human-robot interaction, PRS Platform can simulate a small-scale human community 
-                            for the gradual trial of comprehensive issues related to the integration of embodied robots into human society. 
+                            To further explore the scenarios of human-robot interaction, PRS Platform can simulate (build) a small-scale human community, 
+                            to facilitate Embodied AI research, The PRS Platform can simulate various types of human communities to create different types of data, ranging from skill tasks and multimodal perception data to critical embodied human-robot interaction data. The CVPR 2024 Embodied AI Workshop PRS Challenge utilizes a customized version environment of the PRS platform.
+                            <!-- for the gradual trial of comprehensive issues related to the integration of embodied robots into human society.  -->
                             <!-- a simulator presented by PRS to deploy generalist agents in human society. -->
-                            PRS Platform holds the following <span style="font-weight: 550;">features:</span></span> 
+                            Overall, currently, the PRS platform supports the following <span style="font-weight: 550;">features:</span></span> 
                         <!-- <p>极科通用(Polar Research Station)为极地研究科考站组织通用智能计划的简称，该项目用于针对性探索真正意义上的通用人工智能技术，并致力于使得这些技术以可控的风险、成本、路径逐步落地，并为全人类提供实用的、可靠的、安全的智能服务。 (暂未翻译。。。)</p>
                         <p>为了探索人机混居的场景，我们提出了一个开源的项目——极地科考站，来逐步地减缓具身智能融入人类社会的综合性问题。该项目提供了一个虚拟模拟器平台，该虚拟模拟器的框架如图1所示，并且具有以下特征(a)(b)(c)(d)(e)(f)(g):</p> -->
                         <div style="margin-top: 8px;">
-                        <ul>                            <li> A <span style="font-weight: 500;">3D interactive continuous environment</span> supported by the physics engine (e.g. Nvidia PhysX). </li>
-                            <li> The <span style="font-weight: 500;">multi-story building</span> containing activity rooms, meeting rooms, kitchens, bedrooms, laboratories, greenhouses, warehouses, supermarkets, gyms, and other common scenes, as shown in <a href="#fig1" class="url-text"> Figure 1</a>. </li>
+                        <ul>                            <li> A <span style="font-weight: 500;">3D interactive continuous environment</span> supported by the physics engine, and we support many popular physics engines (e.g. Bullet, MuJoCo, PhysX 5.0) for virtual environment construction. </li>
+                            <li> Our framework can flexibly construct various styles of buildings and room layouts. For instance, the <span style="font-weight: 500;">multi-story building</span> used in the challenge contains 
+                                activity rooms, meeting rooms, kitchens, bedrooms, laboratories, greenhouses, warehouses, supermarkets, gyms, and other common scenes,Our framework can flexibly construct various styles of buildings and room layouts. For instance, the multi-story building used in the challenge contains activity rooms, meeting rooms, kitchens, bedrooms, laboratories, greenhouses, warehouses, supermarkets, gyms, and other common scenes, as shown in <a href="#fig1" class="url-text"> Figure 1</a>. </li>
                             <li> <span style="font-weight: 500;">Human characters (driven by Generative Agent Tech)</span> with their own meaningful behavior and human-like needs (basic physiological, work, entertainment, social, etc.). 
-                                When a character is hungry, it must seek food; otherwise, hunger can result in low blood sugar and a range of negative consequences. </li>
+                                For example, human characters will seek out their favorite food when hungry. </li>
                             <li> Characters autonomously move through the building according to their needs, preferences, habits, states, and social relationships, as shown in <a href="#fig2" class="url-text"> Figure 2</a>. 
-                                We have employed a novel algorithm and evaluation to ensure their behaviors closely resemble real individuals sampled from authentic social contexts. 
-                                This approach significantly surpasses the efficacy of relying solely on LLM and dramatically enhances the impact of digital twin technology. <span style="font-weight: 500;">We are committed to making virtual human characters increasingly similar to real humans </span>.
+                                We create an algorithm to ensure character behaviors closely resemble real human individuals from real world. This approach surpasses the efficacy of relying solely on LLM and digital twin technology. <span style="font-weight: 500;">We are committed to making virtual human characters increasingly similar to real humans </span>.
                                 <!-- We have developed an LLM-based system to generate reasonable behavior for these characters, 
                                 ensuring that their behavior resembles <span style="font-weight: 500;">complex and unpredictable behaviors</span> in the real world, rather than simply fixed patterns. </li> -->
                                 <!-- 我们采用了一种新颖的算法和评价机制来确保他们的行为与我们在真实社会场景中采样的真人对象的行为高度相似.这将极大地优于纯粹的采用大模型的方案，同时这将极大地有助于数字孪生的效果。我们致力于让虚拟环境中的人类角色越来越与真人接近。 -->
                             <!-- 5 ~ 10 -->
-                            <li> Characters have their own <span style="font-weight: 500;">emotional and facial expression system</span>, which is influenced by events and the characters' own traits. </li>
+                            <li> Characters have their own <span style="font-weight: 500;">emotional and facial expression system</span>, which is mainly influenced by what happens around them. </li>
                             <li> Characters accomplish their goals by interacting with <span style="font-weight: 500;">massive objects (<a href="#fig3" class="url-text"> Figure 3</a>) and diverse interactive devices</span> within the environment.</li>
                             <!-- 机器人和人类角色都可以交互的 -->
-                            <li> The community is designed to operate in <span style="font-weight: 500;">a long-term and stable style</span>, facilitating simulation and calculation with the ability to start, accelerate time, and even pause in any given situation. </li>
-                            <li> In the simulator, robots can gather perceptual signals in the scene via <span style="font-weight: 500;">visual, tactile, auditory, temperature, and humidity sensors.</span> 
-                                They interact with a majority of objects in the environment through physical interaction such as <span style="font-weight: 500;">movement, grasping, and manipulation, as shown in <a href="#fig4" class="url-text"> Figure 4</a>.</span></li>
-                            <li> To accommodate users with varying technical backgrounds, we offer <span style="font-weight: 500;">different styles of APIs</span>, such as motor control level (ROS-like style) and ALFRED style semantic APIs for robot control (interaction via target segmentation). 
-                                Furthermore, we have opened up numerous APIs for controlling human characters, items, environments, and devices within the scene—allowing for <span style="font-weight: 500;">comprehensive control over nearly everything.</span>  </li>
+                            <li> The human community environment is designed to operate in <span style="font-weight: 500;">a long-term and stable style</span>, continuously generating human-robot interaction data for various scenarios and prerequisites. It can be used to fully test the reliability of embodied algorithms. </li>
+                            <li> In the simulator, We support robots to obtain perception signals from virtual environments through <span style="font-weight: 500;">visual, tactile, auditory, temperature, humidity, and olfactory sensors. </span> 
+                                And robots can interact with the surrounding environment through physical means such as <span style="font-weight: 500;">movement, grasping, and manipulation, as shown in <a href="#fig4" class="url-text"> Figure 4</a>.</span></li>
+                            <li> In order to facilitate researchers from different fields and backgrounds (NLP, Computer Vision, Robotics, Reinforcement Learning, etc.) in using our platform, we provide <span style="font-weight: 500;">various styles of APIs</span>, 
+                                ranging from ROS-style motion control to ALFRED-style semantic-level APIs. Furthermore, if you find using our platform inconvenient, please contact us.</span>  </li>
                             <li> We have implemented a <span style="font-weight: 500;">lightweight and flexible framework</span> that makes our environment <span style="font-weight: 500;">user-friendly, easily extendable, modifiable, and developable using</span> only <strong>Python</strong>! </li>
                             <!-- <li> </li> -->
                             <!-- <li>Utilization of Universal, LLM-Level, and Skill/Semantic Level APIs</li>
@@ -419,11 +420,12 @@ https://templatemo.com/tm-583-festava-live
                             </h6> -->
                             <br>
                             <!-- <img src="images/scenario/scene2.png" class="center-img" alt="Centered Image"> -->
-                            <img src="images/scenario/scene4.png" class="show-img" alt="Centered Image" id="fig1">
-                            <p style=" text-align: center;"> Figure 1: Diverse room scenes in the PRS Platform follow real-world building. We need diverse common social scenarios. In existing work, we often see common indoor spaces such as kitchens, bedrooms, and living rooms, but less common are places like supermarkets, medical rooms, and studios. However, activities in different places vary greatly, and the premise of depicting diverse human activities in commercial scenarios is to include these settings.</p>
+                            <img src="images/scenario/scene4.png"  alt="Centered Image" id="fig1" style="width: 100%; max-width: 100%; margin-top: 20px;margin-bottom: 15px;">
+                            <p style=" text-align: center;"> Figure 1:  The PRS platform supports the construction of human community environments, such as the multi-story building in the picture containing rooms with multiple functions (such as kitchens, bedrooms, and living rooms, but less common are places like supermarkets, medical rooms, and studios). The inspiration for this building comes from the polar science station in the real world.</p>
                             <br>
-                            <img src="images/gif/building.gif" class="show-img" alt="Centered Image" id="fig">
-                            <p style=" text-align: center;"> Figure 2: The multi-level, interconnected building offers extensive space for activities and coherent semantic information. We strongly emphasise describing "spaces with height," which significantly increases the spatial efficiency with which we portrays complex scenes.</p>
+                            <!-- <img src="images/gif/building.gif" class="show-img" alt="Centered Image" id="fig">
+                            <p style=" text-align: center;"> Figure 2: The multi-level, interconnected building offers extensive space for activities and coherent semantic information. We strongly emphasise describing "spaces with height," which significantly increases the spatial efficiency with which we portrays complex scenes.</p> -->
+                            
                             <img src="images/gif/scenes.gif" class="show-img" alt="Centered Image" id="fig">
                             <p style=" text-align: center;"> Figure 3: Common scenarios with corresponding objects and functional devices are integrated into the PRS Environment.</p>
                 
