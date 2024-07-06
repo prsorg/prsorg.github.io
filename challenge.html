@@ -237,6 +237,8 @@ https://templatemo.com/tm-583-festava-live
                             max-width: 40%;
                             height: auto;">
                         <p><h6>Task —— Human-centered In-building Embodied Delivery:</h6> 
+                            <hr>
+                            <!-- <hr style="border: 1px solid #000000;"> -->
                             We have developed a brand-new virtual environment system from scratch, constructing a multi-level connected building space modeled after a polar research station. This environment also includes autonomous human characters and robots with grasping and mobility capabilities, as well as a large number of interactive items. Based on this environment, we have built a delivery dataset containing 13k language instructions to guide robots in providing services. We simulate human behavior through human characters and sample their various needs in daily life. Finally, we proposed a method centered around a large multimodal model to serve as the baseline system for this dataset. Compared to past embodied data work, our work focuses on a virtual environment centered around human-robot interaction for commercial scenarios. We believe that this will bring new perspectives and exploration angles to the embodied community.
                             <!-- Based on instructions and descriptions, locate the designated item and deliver it to a designated individual. The model or system should understand context, infer possible locations, and accommodate regular human behavior. -->
                             <!-- Robots attempt to comprehend language instructions, locate target objects based on visual perception and environmental knowledge, and accurately grasp and deliver the items to the intended human characters. -->
@@ -268,6 +270,7 @@ https://templatemo.com/tm-583-festava-live
                             <img src="images/gif/delivery.gif" class="show-img" alt="Centered Image">
                             <br>
                             <h6 style="margin-left: 0%;">Dataset</h6>
+                            <hr>
                             <h7>In constructing delivery service data, we initially utilize the large language model (LLM) to generate reasonable daily activities and varied demands for virtual characters based on their profiles. Consequently, the robot is required to locate and deliver the appropriate objects to meet the human characters' demands and accomplish task objectives. 
                                 We continually generate diverse data by modifying character needs, daily routines, and target objects. Furthermore, we incorporate a manual review and refinement stage to ensure the balance of the task data.</h7>
                                 <!-- <br><p> The commercial scenario is characterized by the need to account for numerous complex and intervening factors. We analyze the scenario and pinpoint the critical elements of the delivery service. 
@@ -285,7 +288,7 @@ https://templatemo.com/tm-583-festava-live
                             <img src="images/task/task11.png" class="center-img-border" alt="Centered Image">
                             <p style=" text-align: center;">The available information in task.</p>
 
-                            <h6 style="margin-left: 2%;">Task Definition and Settings</h6>
+                            <h6 style="margin-left: 2%;">Task Definition and Settings <hr></h6>
                             <ul>
                                 <li><span style="font-size: 17px; font-weight: 500;">Robots operate within a relatively fixed building space.</span></li>
                                 <li><span style="font-size: 17px; font-weight: 500;">The residents within the building are the recipients of the service, and they typically move throughout the building based on personal needs and objectives. Robots can access relevant information about the recipients to better locate and identify them.</span></li>
@@ -298,6 +301,7 @@ https://templatemo.com/tm-583-festava-live
                             <p style=" text-align: center;">Human-centered in-building embodied delivery task setting.</p>
                             
                             <h6 >Baseline</h6>
+                            <hr>
                             <h7>We propose an LMM-based approach as the baseline method, employing a modular architecture encompassing language instruction analysis, multimodal target search, and robotic action execution. The baseline method comprises multiple modules, including the language, vision, and action modules, as shown in the following figure, for tasks such as language parsing, navigation search, scene understanding, object recognition, segmentation, action, localization, and object manipulation.</h7>
                             <img src="images/task/delivery_method.png" class="center-img-border" alt="Centered Image">
                             <p style=" text-align: center;"> Modular method for the robot delivery task with LLM and LMM.</p>
