@@ -422,32 +422,32 @@ https://templatemo.com/tm-583-festava-live
                                 News: <a href="challenge.html" class="url-text"> Human-centered In-building Embodied Delivery Benchmark </a>
                             </h6> -->
                             <br>
-                            <img src="images/scenario/reality.png" class="show-img" alt="Centered Image" id="fig">
-                            <p style=" text-align: center;"> The PRS platform supports complex multi-story architectural structures interconnected by stairs and elevators. The building encompasses massive rooms with diverse functions and styles, constituting a Human-Robot Integration (HRI) living environment. The inspiration and environment setting for this building comes from the polar research stations in the real world (e.g., <a href="https://www.pric.org.cn/index.php?c=category&id=127" class="url-text">Polar Research Institute of China</a>, <a href="https://www.nsf.gov/geo/opp/support/southp.jsp" class="url-text"> Amundsen-Scott South Pole Station</a>).</p>
+                            <img src="images/scenario/reality.png" class="show-img" alt="Centered Image" id="fig1">
+                            <p style=" text-align: center;">Figure 1: The PRS platform supports complex multi-story architectural structures interconnected by stairs and elevators. The building encompasses massive rooms with diverse functions and styles, constituting a Human-Robot Integration (HRI) living environment. The inspiration and setting of this building comes from the polar research stations in the real world (e.g., <a href="https://www.pric.org.cn/index.php?c=category&id=127" class="url-text">Polar Research Institute of China</a>, <a href="https://www.nsf.gov/geo/opp/support/southp.jsp" class="url-text"> Amundsen-Scott South Pole Station</a>).</p>
                             <br>
                             <!-- <img src="images/scenario/scene2.png" class="center-img" alt="Centered Image"> -->
                             <!-- style="width: 100%; max-width: 100%; margin-top: 20px;margin-bottom: 15px;" -->
-                            <img src="images/scenario/scene4.png" class="show-img" alt="Centered Image" id="fig1" >
-                            <p style=" text-align: center;"> Figure 1:  Present the observational perspectives of each room within the existing environment in the following sequence: warehouse, supermarket, sample room, medical room, kitchen, living room, meeting room, gym, bedroom, working space, office, laboratory, greenhouse, server room, etc.</p>
+                            <img src="images/scenario/scene4.png" class="show-img" alt="Centered Image" id="fig2" >
+                            <p style=" text-align: center;"> Figure 2:  Present the observational perspectives of each room within the existing environment in the following sequence: warehouse, supermarket, sample room, medical room, kitchen, living room, meeting room, gym, bedroom, working space, office, laboratory, greenhouse, server room, etc.</p>
                             <br>
                             <!-- <img src="images/gif/building.gif" class="show-img" alt="Centered Image" id="fig">
                             <p style=" text-align: center;"> Figure 2: The multi-level, interconnected building offers extensive space for activities and coherent semantic information. We strongly emphasise describing "spaces with height," which significantly increases the spatial efficiency with which we portrays complex scenes.</p> -->
                             
                             <!-- <img src="images/gif/scenes.gif" class="show-img" alt="Centered Image" id="fig"> -->
-                            <div class="video-wrapper">
+                            <div class="video-wrapper" id="video1">
                                 <video class="video3" controls>
                                   <source src="images/video/scenes.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                                 </video>
                               </div>
-                            <p style=" text-align: center;"> Figure 3: Common scenarios with corresponding objects and functional devices are integrated into the PRS Environment.</p>
+                            <p style=" text-align: center;"> Common scenarios with corresponding objects and functional devices are integrated into the PRS Environment.</p>
                 
                             <!-- <img src="images/scenario/npc1.png" class="center-img" alt="Centered Image" id="fig2"> -->
-                            <img src="images/scenario/scene3.png" class="show-img" alt="Centered Image">
-                            <p style=" text-align: center;"> Figure 4: Virtual characters live in the building and perform human-like behavior. As mentioned earlier, the behavior of humans in commercial scenarios needs emphasis. The activities of the robot actually revolve around human activities. Therefore, in our virtual environment, we support a human character system that controls goals, actions, and interactions. In this task, we mainly adopt various forms of daily activities (working, resting, simple socializing, etc.) to depict the actions of characters. Since the delivery task is closely related to the positions of characters, we primarily drive the movement of characters within the building based on a generative system.</p>
+                            <img src="images/scenario/scene3.png" class="show-img" alt="Centered Image" id="fig3">
+                            <p style=" text-align: center;"> Figure 3: Virtual characters live in the building and perform human-like behavior. As mentioned earlier, the behavior of humans in commercial scenarios needs emphasis. The activities of the robot actually revolve around human activities. Therefore, in our virtual environment, we support a human character system that controls goals, actions, and interactions. In this task, we mainly adopt various forms of daily activities (working, resting, simple socializing, etc.) to depict the actions of characters. Since the delivery task is closely related to the positions of characters, we primarily drive the movement of characters within the building based on a generative system.</p>
                             <br>
                             <!-- <img src="images/scenario/npc1.png" class="show-img" alt="Centered Image" id="fig"> -->
-                            <img src="images/scenario/npc2.png" class="show-img" alt="Centered Image" id="fig">
+                            <img src="images/scenario/npc2.png" class="show-img" alt="Centered Image" id="fig_npc">
                             <div class="video-wrapper">
                                 <video class="video3" controls>
                                   <source src="images/video/npcs.mp4" type="video/mp4">
@@ -455,15 +455,15 @@ https://templatemo.com/tm-583-festava-live
                                 </video>
                               </div>
                             <!-- <img src="images/gif/npcs.gif" class="show-img" alt="Centered Image" id="fig"> -->
-                            <p style=" text-align: center;"> Figure 5: The generative model-driven NPC is a human-like individual with its demands and corresponding behaviors.</p>
+                            <p style=" text-align: center;"> Figure 4: The generative model-driven NPC is a human-like individual with its demands and corresponding behaviors.</p>
                 
 
-                            <img src="images/scenario/items.png" class="show-img" alt="Centered Image" id="fig3">
-                            <p style=" text-align: center;"> Figure 6: Diverse items and furniture in the PRS Environment.  Our virtual environment is primarily driven by a physics engine at its core, containing items with physical properties, so almost all movements are continuous (with exceptions for specific object state changes controlled by scripts and interfaces).</p>
-                            <img src="images/scenario/task_example.png" class="show-img" alt="Centered Image" id="fig4">
-                            <p style=" text-align: center;"> Figure 7: The embodied robot can move anywhere and manipulate objects with its arm. It is equipped with visual perception (RGB-D) and simple tactile perception based on rigid body collision. At the core, we have prepared various control methods for it. Users can control the robot either through an ALFRED-style interface (typically invoked by high-level action and LMMs with object segmentation) or through a ROS-like API.</p>
-                            <img src="images/gif/mani.gif" class="show-img" alt="Centered Image" id="fig">
-                            <p style=" text-align: center;"> Figure 8: Robots interact using articulated joints, changing the position of objects or the state of articulated devices.</p>
+                            <img src="images/scenario/items.png" class="show-img" alt="Centered Image" id="fig5">
+                            <p style=" text-align: center;"> Figure 5: Diverse items and furniture in the PRS Environment.  Our virtual environment is primarily driven by a physics engine at its core, containing items with physical properties, so almost all movements are continuous (with exceptions for specific object state changes controlled by scripts and interfaces).</p>
+                            <img src="images/scenario/task_example.png" class="show-img" alt="Centered Image" id="fig6">
+                            <p style=" text-align: center;"> Figure 6: The embodied robot can move anywhere and manipulate objects with its arm. It is equipped with visual perception (RGB-D) and simple tactile perception based on rigid body collision. At the core, we have prepared various control methods for it. Users can control the robot either through an ALFRED-style interface (typically invoked by high-level action and LMMs with object segmentation) or through a ROS-like API.</p>
+                            <img src="images/gif/mani.gif" class="show-img" alt="Centered Image" id="fig7">
+                            <p style=" text-align: center;"> Figure 7: Robots interact using articulated joints, changing the position of objects or the state of articulated devices.</p>
                 
 
                             <!-- <img src="images/scenario/scene5.png" class="show-img" alt="Centered Image"> -->
@@ -577,8 +577,9 @@ Through this environment, we aim to explore the capabilities of LLMs in understa
 
                 <!-- <img src="images/scenario/plane.png" class="show-img" alt="Centered Image" id="fig">
                 <h6 style="text-align: center;"> Figure : Building plans.</h6> -->
-                <img src="images/scenario/scene2.png" class="show-img" alt="Centered Image" id="fig">
+                <!-- <img src="images/scenario/scene2.png" class="show-img" alt="Centered Image" id="fig">
                 <p style=" text-align: center;"> Figure 9: We present a multi-story polar research station building. Virtual environments typically need to meet the task requirements. Clearly, to depict corresponding commercial scenarios, existing environments are still constrained by factors such as the richness of the scene, the complexity of space, character portrayal, continuous environmental state systems, long-term operation, and the setup of items and robots. Consequently, we have crafted a brand-new virtual environment, the PRS Environment, which is specifically tailored to facilitate the various generalist agent and robotic tasks.</p>
+             -->
             </div>
             </section>
             <br>
@@ -589,7 +590,7 @@ Through this environment, we aim to explore the capabilities of LLMs in understa
         <h4>--- Future Work ---</h4>
         <h5>Various projects, such as social expressions, more interactive devices, and more environmental features (e.g., mirrors), are to be announced.</h5>
         
-        <img src="images/scenario/features.png" class="show-img" alt="Centered Image">
+        <img src="images/scenario/features.png" class="show-img" alt="Centered Image" id="fig_feature">
             <p style=" text-align: center;">(1) Projector simulation. (2) Interactive devices for various purposes. 
                 (3) Monitoring and display screen simulations. (4) Mirrors that can reflect visual content.</p>
         <!-- <img src="images/scenario/mirror.png" class="center-img" alt="Centered Image">
@@ -633,8 +634,8 @@ Through this environment, we aim to explore the capabilities of LLMs in understa
             </video>
           </div> -->
           <br>
-          <img src="images/gif/npc_interaction.gif" class="show-img" alt="Centered Image" id="fig">
-            <p style=" text-align: center;"> Figure 10: NPC-device interaction and mirror effect.</p>
+          <img src="images/gif/npc_interaction.gif" class="show-img" alt="Centered Image" id="fig8">
+            <p style=" text-align: center;"> Figure 8: NPC-device interaction and mirror effect.</p>
         
             <span style="font-weight: 500; font-size: 20px;"><strong>
                 We can customize the generation of the following scenarios according to requirements:<br></strong>
@@ -645,14 +646,15 @@ Through this environment, we aim to explore the capabilities of LLMs in understa
 
             <!-- <img src="images/features/interactive_device.png" class="show-img" alt="Centered Image" id="fig"> -->
                 
-            <img src="images/scenario/device.png" class="show-img" alt="Centered Image" id="fig">
+            <img src="images/scenario/device.png" class="show-img" alt="Centered Image" id="fig9">
+            <p style=" text-align: center;"> Figure 9: We have established a set of processes to customize interactive devices with physical capabilities.</p>
             <!-- <p style=" text-align: center;"> Figure 11: Mirror effect.</p> -->
         
             <span style="font-weight: 500; font-size: 20px;">
                 3. Customizable rendering pipeline selection.<br>
                 4. Rapid customization of functional buildings to meet the needs of large-scale embodied commercial applications.</span>
-            <img src="images/features/render.png" class="show-img" alt="Centered Image" id="fig">
-            <p style=" text-align: center;"> Figure 11: Customizable rendering pipeline to meet varying levels of demand.</p>
+            <img src="images/features/render.png" class="show-img" alt="Centered Image" id="fig10">
+            <p style=" text-align: center;"> Figure 10: Customizable rendering pipeline to meet varying levels of demand.</p>
         </div>
     </section>
 
