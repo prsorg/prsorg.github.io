@@ -423,7 +423,7 @@ strong {
   top: 0;
   left: 0;
   object-fit: cover;
-  width: 100%;
+  width: auto;
   height: 100%;
   opacity: 0.96; 
   /* 设置透明度为50% */
@@ -1485,4 +1485,42 @@ strong {
   content: "";
   display: table;
   clear: both;
+}
+
+/* 
+  nav for left
+*/
+
+.sidebar {
+  /* position: fixed; */
+  /* transform: translate(-50%, -50%);  */
+  /* 使用CSS3的transform属性居中对齐 */
+  
+
+  /* width: 100px;  */
+  /* 导航栏宽度 */
+  /* padding-left: 5%; */
+  width: auto;
+  background-color: #f4f4f400; /* 导航栏背景色 */
+  padding-right: 10px; /* 导航栏内边距 */
+  padding-bottom: 10px;
+  padding-top: 15px;
+  /* box-shadow: 2px 0 5px rgba(0,0,0,0.1);  */
+  /* 导航栏阴影 */
+  
+
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000; /* 链接默认颜色为黑色 */
+  font-size: small;
+  margin-top: 20px;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: rgb(255, 64, 0); /* 鼠标悬停时文本颜色为红色 */
 }
