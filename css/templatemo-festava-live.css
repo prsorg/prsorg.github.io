@@ -424,7 +424,7 @@ strong {
   left: 0;
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0.96; 
   /* 设置透明度为50% */
 }
