@@ -1,1 +1,66 @@
-<p>To Be Announced</p>
+<!-- <p>To Be Announced</p> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>带导航栏的网页</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #sidebar {
+      position: fixed; /* 固定位置 */
+      top: 0; /* 与顶部对齐 */
+      left: 0; /* 与左侧对齐 */
+      width: 200px; /* 导航栏宽度 */
+      background-color: #f4f4f4; /* 导航栏背景色 */
+      height: 100%; /* 高度占满整个视口 */
+      padding: 20px; /* 导航栏内边距 */
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* 导航栏阴影 */
+      overflow-y: auto; /* 允许垂直滚动 */
+    }
+    #sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    #sidebar a:hover {
+      text-decoration: underline;
+    }
+    #content {
+      margin-left: 220px; /* 内容区域左边距，等于导航栏宽度加内边距 */
+      padding: 20px; /* 内容区域内边距 */
+    }
+  </style>
+  </head>
+  <body>
+  
+  <div id="sidebar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+    <!-- 更多链接 -->
+  </div>
+  
+  <div id="content">
+    <h1>网页标题</h1>
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>这里是Section 1的内容...</p>
+    </section>
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>这里是Section 2的内容...</p>
+    </section>
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>这里是Section 3的内容...</p>
+    </section>
+    <!-- 更多内容 -->
+  </div>
+
+</body>
+</html>
